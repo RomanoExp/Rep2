@@ -35,6 +35,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 10px;
 }
 
 .nav__logo {
@@ -138,11 +139,10 @@ body {
 }
 
 .offer__img {
-    width: 660px;
-    height: 550px;
+    height: 602px;
     background: url(../img/Device.png)no-repeat;
     background-size: contain;
-    background-position: bottom;
+    background-position: center;
     grid-column: 2;
 }
 
@@ -153,12 +153,12 @@ body {
     border: none;
     background: none;
     position: relative;
-    transition: .8s;  
+    transition: .8s;
 }
 
 .nav__menu .burger:focus {
     outline: none;
-    
+
 }
 
 .nav__menu .burger:active label span,
@@ -199,7 +199,8 @@ label span:after {
 
 .nav__menu input:checked + .burger span:before {
     transform: rotate(45deg);
-    background: #fff;;
+    background: #fff;
+    ;
     width: 40px;
     transform-origin: top right;
 }
@@ -243,16 +244,15 @@ label span:after {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     justify-items: center;
-    align-items: flex-end;
-    padding: 30px 0 30px;
+    align-items: end;
+    padding: 30px 0;
     position: relative;
 }
 
-.logos__block:after {
+.logos:after {
     content: '';
     display: block;
     position: absolute;
-    left: 0;
     bottom: 40%;
     width: 100%;
     height: 1px;
@@ -262,7 +262,7 @@ label span:after {
 .logos__block {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    justify-items: center;
+    grid-gap: 10px;
 }
 
 .logos__block a {
@@ -280,7 +280,6 @@ label span:after {
 .block-behance,
 .block-dribbble {
     height: 80px;
-    min-width: 200px;
     display: grid;
     justify-content: center;
 
@@ -336,7 +335,7 @@ label span:after {
     margin: 120px 0 0 0;
 }
 
-.block-one {
+.carousel {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -345,25 +344,25 @@ label span:after {
     margin: 0 0 120px 0;
 }
 
-.one__info {
+.carousel__info {
     padding: 0 0 0 120px;
 }
 
-.one__info h2 {
+.carousel__info h2 {
     font-size: 36px;
     color: #fff;
     font-weight: 400;
     padding: 0 0 30px;
 }
 
-.one__info p {
+.carousel__info p {
     color: #677897;
     font-weight: 400;
     padding: 0 190px 0 0;
     line-height: 30px;
 }
 
-.one__img {
+.carousel__img {
     height: 550px;
     width: 550px;
     display: grid;
@@ -421,14 +420,14 @@ label span:after {
     cursor: pointer;
 }
 
-.one__img:hover {
+.carousel__img:hover {
     animation: loaderbox .8s ease-in-out;
     animation-iteration-count: 1;
 }
 
-.one__img:hover .img1,
-.one__img:hover .img2,
-.one__img:hover .img3,
+.carousel__img:hover .img1,
+.carousel__img:hover .img2,
+.carousel__img:hover .img3,
 .one__img:hover .img4 {
     animation: loader .8s ease-in-out;
     animation-iteration-count: 1;
@@ -488,7 +487,7 @@ label span:after {
 
 /*********************************/
 
-.block-thwo {
+.mobile {
     margin: 0 0 120px 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -496,7 +495,7 @@ label span:after {
     align-items: center;
 }
 
-.thwo__img {
+.mobile__img {
     height: 640px;
     background: url(../img/mobile.png)no-repeat;
     background-size: cover;
@@ -505,7 +504,7 @@ label span:after {
 
 }
 
-.thwo__img:hover {
+.mobile__img:hover {
     animation: shecker.6s ease-in-out;
     transform-origin: bottom;
 
@@ -545,14 +544,14 @@ label span:after {
 }
 
 
-.thwo__info > h2 {
+.mobile__info > h2 {
     font-size: 36px;
     color: #fff;
     font-weight: 400;
     padding: 0 100px 30px 0;
 }
 
-.thwo__info p {
+.mobile__info p {
     color: #677897;
     font-weight: 400;
     padding: 0 300px 0 0;
@@ -562,7 +561,7 @@ label span:after {
 /********************************/
 
 
-.block-three {
+.price {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -571,25 +570,25 @@ label span:after {
     margin-bottom: 90px;
 }
 
-.three__info {
+.price__info {
     padding: 0 0 0 120px;
 }
 
-.three__info h2 {
+.price__info h2 {
     font-size: 36px;
     color: #fff;
     font-weight: 400;
     padding: 0 0 30px;
 }
 
-.three__info p {
+.price__info p {
     color: #677897;
     font-weight: 400;
     padding: 0 190px 0 0;
     line-height: 30px;
 }
 
-.three__img {
+.price__img {
     position: relative;
     height: 450px;
     cursor: pointer;
@@ -619,7 +618,7 @@ label span:after {
 }
 
 
-.three__img:hover .dog-img {
+.price__img:hover .dog-img {
     animation: frontdog 1s ease-in-out forwards;
     animation-iteration-count: 1;
 
@@ -692,7 +691,7 @@ label span:after {
     align-items: center;
 }
 
-.player__screen {
+.video {
     width: 100%;
     height: 430px;
     display: flex;
@@ -742,13 +741,13 @@ label span:after {
     backface-visibility: hidden;
 }
 
-.player__screen:hover .front-img {
+.video:hover .front-img {
     transform: rotateY(0deg);
     transition: .3s;
     z-index: 1;
 }
 
-.player__screen:hover .back-img {
+.video:hover .back-img {
     transform: rotateY(180deg);
     transition: .3s;
 }
@@ -812,22 +811,6 @@ label span:after {
     transition: .4s;
 }
 
-.statistic > button {
-    /*
-    background: transparent ;
-    border-image:linear-gradient(#2A7AFF, #F7618B) ;
-*/
-}
-
-.statistic > button > a {
-    /*
-    width: 100%;
-    height: 100%;
-    padding: 5px;
-    background: transparent;
-    border-radius: 100px;
-*/
-}
 
 /*************************************************/
 
@@ -1000,4 +983,32 @@ button {
     display: flex;
     justify-content: space-between;
     color: #2A4560;
+}
+
+
+/*button-back*/
+
+.button-back {
+    opacity: 0.6;
+    transition: .2s;
+}
+
+.button-back:hover {
+    opacity: 1;
+}
+
+#upbutton {
+    border: 3px solid rgba(85, 85, 85, 0.79);
+    border-radius: 50%;
+    font-size: 40px;
+    text-align: center;
+    color: rgba(85, 85, 85, 0.82);
+    height: 60px;
+    width: 60px;
+    bottom: 8px;
+    left: 20px;
+    cursor: pointer;
+    display: none;
+    position: fixed;
+    z-index: 999;
 }

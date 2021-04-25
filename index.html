@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
+    <script src="js/button.js"></script>
 </head>
 
 <body>
@@ -18,13 +19,11 @@
             <nav class="header__nav">
                 <div class="nav__logo"></div>
                 <div class="nav__menu">
-                   
-                   <input type="checkbox" id="check-burger">
+                    <input type="checkbox" id="check-burger">
                     <button class="burger">
                         <label for="check-burger">
                             <span></span>
                         </label></button>
-                        
                     <ul>
                         <li class="active"><a href="">Home</a></li>
                         <li><a href="">About us</a></li>
@@ -59,43 +58,41 @@
             </div>
         </section>
         <section class="descrition">
-            <div class="block-one">
-                <div class="one__info">
+            <div class="carousel">
+                <div class="carousel__info">
                     <h2>The simplest way to have a professioanal webpage.</h2>
                     <p>Get all the benefits of an in-wall or in-ceiling speaker system without any of the hassle. Just replace a few lights around your house, and start streaming crisp, clear audio, everywhere.</p>
                 </div>
-                <div class="one__img">
+                <div class="carousel__img">
                     <div class="img1"></div>
                     <div class="img2"></div>
                     <div class="img3"></div>
                     <div class="img4"></div>
                 </div>
             </div>
-            <div class="block-thwo">
-                <div class="thwo__img"></div>
-                <div class="thwo__info">
+            <div class="mobile">
+                <div class="mobile__img"></div>
+                <div class="mobile__info">
                     <h2>Display your product
                         as never before</h2>
                     <p>Get all the benefits of an in-wall or in-ceiling speaker system without any of the hassle. Just replace a few lights around your house, and start streaming crisp, clear audio, everywhere.
                     </p>
                 </div>
             </div>
-            <div class="block-three">
-                <div class="three__info">
+            <div class="price">
+                <div class="price__info">
                     <h2>The simplest way to have a professioanal webpage.</h2>
                     <p>Get all the benefits of an in-wall or in-ceiling speaker system without any of the hassle. Just replace a few lights around your house, and start streaming crisp, clear audio, everywhere.</p>
                 </div>
-                <div class="three__img"><img src="img/Screen%203.png" alt="" class="helm"><img src="img/Screen%202.png" alt="" class="dog-img"><img src="img/Screen%201.png" alt="" class="sale-img"></div>
+                <div class="price__img"><img src="img/Screen%203.png" alt="" class="helm"><img src="img/Screen%202.png" alt="" class="dog-img"><img src="img/Screen%201.png" alt="" class="sale-img"></div>
             </div>
             <div class="player">
                 <div class="player__title">
                     <h2>Layered Video Player</h2>
                     <p>Video player like never before</p>
                 </div>
-                <div class="player__screen">
-                    <div class="screen-play">
-                        <div class="triangle"></div>
-                    </div>
+                <div class="video">
+                    <div class="screen-play"></div>
                     <div class="widget">
                         <div class="front-img"><img src="img/simonemiro.png" alt=""></div>
                         <div class="back-img"><img src="img/simonemiro.png" alt=""></div>
@@ -185,6 +182,10 @@
             <p>&copy; 2017 Copyrigts are Creative Commons</p>
             <p>Don’t forget to give credit &#128153;</p>
         </div>
+    </div>
+    <div class="button-back"><a id="upbutton" href="#" onclick="smoothJumpUp(); return false;">
+            <i class="fas fa-chevron-up"></i>
+        </a>
     </div>
 </body>
 
