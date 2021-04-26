@@ -151,7 +151,8 @@ body {
     width: 50px;
     height: 30px;
     border: none;
-    background: none;
+    border-radius: 10px;
+    background: rgba(68, 68, 68, 0.85);
     position: relative;
     transition: .8s;
 }
@@ -200,7 +201,6 @@ label span:after {
 .nav__menu input:checked + .burger span:before {
     transform: rotate(45deg);
     background: #fff;
-    ;
     width: 40px;
     transform-origin: top right;
 }
@@ -220,6 +220,7 @@ label span:after {
 .nav__menu input:checked + .burger {
     transform: translateX(-150px);
     transition: 1s;
+    background:none;
 }
 
 .burger label {
@@ -333,6 +334,7 @@ label span:after {
 
 .descrition {
     margin: 120px 0 0 0;
+    overflow: hidden;
 }
 
 .carousel {
@@ -594,13 +596,13 @@ label span:after {
     cursor: pointer;
 }
 
-.helm-img,
+.helm,
 .dog-img,
 .sale-img {
     position: absolute;
 }
 
-.helm-img {
+.helm{
     bottom: 0;
     left: calc(50% - 370px/2);
 }
@@ -961,7 +963,7 @@ button {
     color: #162541;
 }
 
-.lofo-footer {
+.logo-footer {
     width: 104px;
     height: 22px;
     background: url(../img/Logo-footer.png)no-repeat center #101F2D;
