@@ -430,7 +430,7 @@ label span:after {
 .carousel__img:hover .img1,
 .carousel__img:hover .img2,
 .carousel__img:hover .img3,
-.one__img:hover .img4 {
+.carousel__img:hover .img4 {
     animation: loader .8s ease-in-out;
     animation-iteration-count: 1;
 
