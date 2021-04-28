@@ -259,7 +259,6 @@ button:hover:active:before {
 
 .nav__menu .burger:focus {
     outline: none;
-
 }
 
 .nav__menu .burger:active label span,
