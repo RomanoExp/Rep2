@@ -715,7 +715,7 @@ label span:after {
 
 .sale-img {
     bottom: 80px;
-    left: calc(37% - 380px/2);
+    left: calc(47% - 380px/2);
 }
 
 .price__img:hover .dog-img {
