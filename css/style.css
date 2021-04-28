@@ -689,6 +689,7 @@ label span:after {
 }
 
 .price__img {
+    width: 80%;
     position: relative;
     height: 450px;
     cursor: pointer;
@@ -702,7 +703,7 @@ label span:after {
 
 .helm {
     bottom: 0;
-    left: calc(50% - 370px/2);
+    left: calc(60% - 370px/2);
 }
 
 .dog-img {
