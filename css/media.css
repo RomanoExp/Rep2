@@ -113,11 +113,11 @@
         top: -100px;
         right: -100px;
         width: 320px;
-        height: 900px;
+        height: 700px;
         opacity: 0;
         transform: translateX(150px) translateY(200px)rotate(160deg);
         transition: .8s;
-        border-radius: 50px;
+        border-radius: 100px;
         z-index: 5;
     }
 
@@ -344,6 +344,10 @@
     }
 
     /*********************************************/
+    .price{
+        margin-bottom: 30px;
+    }
+    
     .price__info p {
         padding: 0 50px;
 
