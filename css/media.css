@@ -4,6 +4,19 @@
     }
 }
 
+@media (max-width: 1400px) {
+
+    .carousel__info p {
+        padding: 0 100px 0 0;
+    }
+
+    .carousel__img {
+        height: 500px;
+        width: 500px;
+    }
+
+}
+
 @media (max-width: 1300px) {
     .logos__block {
         grid-template-columns: repeat(5, 1fr);
@@ -17,6 +30,34 @@
 
 }
 
+@media (max-width: 1200px){
+    .carousel {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-gap: 50px;
+        margin-bottom: 120px;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .carousel__img {
+        width: 600px;
+        height: 600px;
+        grid-row: 2/4;
+    }
+
+    .carousel__info {
+        padding: 0;
+        text-align: center;
+    }
+
+    .carousel__info p {
+        padding: 0 100px;
+    }
+
+    
+    }
+    
 @media (max-width: 1024px) {
 
     .nav__menu .burger {
@@ -36,11 +77,11 @@
     .nav__menu > ul {
         position: fixed;
         top: -100px;
-        right: 0px;
+        right: -100px;
         width: 320px;
         height: 900px;
         opacity: 0;
-        transform: translateX(150px) translateY(110px)rotate(190deg);
+        transform: translateX(150px) translateY(200px)rotate(160deg);
         transition: .8s;
         border-radius: 50px;
         z-index: 5;
@@ -94,26 +135,8 @@
         margin-bottom: 120px;
     }
 
-    .carousel {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-gap: 50px;
-        margin-bottom: 120px;
-        justify-items: center;
-        align-items: center;
-    }
-
-    .carousel__img {
-        grid-row: 2/4;
-    }
-
-    .carousel__info {
-        padding: 0;
-        text-align: center;
-    }
-
     .carousel__info p {
-        padding: 0 200px;
+        padding: 0 100px;
     }
 
     /*********************************************/
@@ -285,7 +308,7 @@
         justify-content: center;
         align-items: center;
     }
-
+/************************************************/
     .descrition {
         margin-bottom: 100px;
     }
@@ -302,7 +325,7 @@
     }
 
     .carousel__info p {
-        padding: 0 100px;
+        padding: 0 50px;
     }
 
 

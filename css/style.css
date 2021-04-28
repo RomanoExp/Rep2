@@ -52,6 +52,7 @@ body {
 .nav__menu > ul > li {
     list-style-type: none;
     margin: 0 25px 0 0;
+
 }
 
 .nav__menu > ul > li > a {
@@ -93,11 +94,57 @@ body {
 .statistic > button,
 .block-btn > button {
     height: 50px;
+    width: 200px;
     border-radius: 100px;
-    background: linear-gradient(#2A7AFF, #F7618B);
     cursor: pointer;
     border: none;
+    position: relative;
+
 }
+
+.offer__info > button:before,
+.player > button:before,
+.statistic > button:before,
+.block-btn > button:before {
+    position: absolute;
+    content: '';
+    top: -4px;
+    left: -4px;
+    height: calc(100% + 8px);
+    width: calc(100% + 8px);
+    border-radius: 100px;
+    z-index: -1;
+    opacity: 1;
+    filter: blur(2px);
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    background-size: 1000%;
+    transition: opacity .3s ease-in-out;
+    animation: animate 60s linear infinite;
+}
+
+button:hover::before {
+    opacity: 1;
+    filter: blur(10px);
+}
+
+button:hover:active:before {
+    filter: blur(3px);
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 1000% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
 
 .offer__info > button:focus,
 .offer__info > button:active,
@@ -114,17 +161,32 @@ body {
 .player > button:hover,
 .statistic > button:hover,
 .block-btn > button:hover {
-    opacity: .9;
+    opacity: 1;
+
 }
 
 .offer__info > button > a,
 .player > button > a,
 .statistic > button > a,
 .block-btn > button > a {
-    padding: 0 35px;
     font-size: 18px;
     text-decoration: none;
     color: #fff;
+    background: linear-gradient(#2A7AFF, #F7618B);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 100px;
+}
+
+.offer__info > button:hover > a,
+.player > button:hover > a,
+.statistic > button:hover > a,
+.block-btn > button:hover > a {
+    background: #080a0d;
+
 }
 
 .offer__info h1 {
@@ -220,7 +282,7 @@ label span:after {
 .nav__menu input:checked + .burger {
     transform: translateX(-150px);
     transition: 1s;
-    background:none;
+    background: none;
 }
 
 .burger label {
@@ -422,6 +484,7 @@ label span:after {
     cursor: pointer;
 }
 
+
 .carousel__img:hover {
     animation: loaderbox .8s ease-in-out;
     animation-iteration-count: 1;
@@ -602,7 +665,7 @@ label span:after {
     position: absolute;
 }
 
-.helm{
+.helm {
     bottom: 0;
     left: calc(50% - 370px/2);
 }
@@ -798,6 +861,13 @@ label span:after {
     margin-bottom: 50px;
 }
 
+.visitors > img,
+.users > img,
+.company > img {
+    width: 100%;
+}
+
+
 .visitors,
 .users,
 .company {
@@ -948,6 +1018,7 @@ button {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    position: relative;
 }
 
 .medium {
@@ -985,6 +1056,38 @@ button {
     display: flex;
     justify-content: space-between;
     color: #2A4560;
+}
+
+
+
+
+/******************animation scroll*****************************/
+
+.header,
+.logos,
+.carousel,
+.mobile,
+.price,
+.player,
+.statistic,
+.newsletter,
+.footer {
+    transform: translate(0, 100px);
+    transition: .8s ease 0s;
+    opacity: 0;
+}
+
+.header._active,
+.logos._active,
+.carousel._active,
+.mobile._active,
+.price._active,
+.player._active,
+.statistic._active,
+.newsletter._active,
+.footer._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
 }
 
 
